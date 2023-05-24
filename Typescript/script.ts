@@ -37,7 +37,6 @@ function calculateTip(): void {
 
   // Calculate the tip amount and total amount
   const tipAmount = billAmount * (tipPercent / 100);
-  const totalAmount = billAmount + tipAmount;
 
   // Get the currency symbol based on the selected currency
   const currencySymbol = getCurrencySymbol(currencySelector.value);
