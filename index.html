@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <h2>Tip Calculator</h2>
+    <form>
+      Bill Amount: <input id="bill" type="number" placeholder="Enter bill amount"><br>
+      Tip Percentage: <input id="tip" type="number" placeholder="Enter tip percentage"><br>
+      <label class="label-text" for="currency">Currency:</label>
+      <select class="select-currency" id="currency">
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+        <option value="GBP">GBP</option>
+        <option value="CHF">CHF</option>
+      </select><br>
+      <div id="button-and-result">
+        <button type="button" onclick="calculateTip()">Calculate</button>
+        <h3 id="result"></h3>
+      </div>
+    </form>
+    <div class="theme-selector-container center">
+      <label for="theme-selector">Choose a theme:</label>
+      <select id="theme-selector">
+        <option value="theme-default">Light</option>
+        <option value="theme-dark">Dark</option>
+      </select>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

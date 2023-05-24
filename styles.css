@@ -1,0 +1,156 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
+
+  form {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  form input, .select-currency {
+    font-size: 1em;
+  }
+
+  .label-text {
+    font-size: 1em;
+  }
+
+  form button {
+    padding: 8px 16px;
+    font-size: 1em;
+  }
+
+  h2, h3 {
+    font-size: 1.5em;
+  }
+}
+
+h2 {
+  color: #000;
+}
+
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.1);
+}
+
+form input, .select-currency {
+  margin: 10px 0;
+  padding: 8px;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 1em;
+}
+
+.label-text {
+  display: inline-block;
+  margin-bottom: 5px;
+  color: #000;
+}
+
+form button {
+  padding: 10px 20px;
+  background-color: #008CBA; /* Blue */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #007B9A; /* Darker blue */
+}
+
+h3 {
+  margin: 0px;
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #000;
+  min-height: 1em;
+}
+
+#button-and-result {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#result {
+  min-height: 20px;
+  color: #000;
+}
+
+.theme-selector-container {
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 20px;
+  padding: 5px;
+  z-index: 10;
+  background-color: #fff;
+  color: #000;
+}
+
+.theme-selector-container select {
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  color: #000;
+}
+
+.theme-default {
+  background-color: #fff;
+  color: #000;
+}
+
+.theme-default button {
+  background-color: #008CBA; /* Blue */
+  color: white;
+}
+
+.theme-default button:hover {
+  background-color: #007B9A; /* Darker blue */
+}
+
+.theme-dark, .theme-dark h2 {
+  background-color: #000;
+  color: #fff;
+}
+
+.theme-dark .label-text {
+  color: #fff;
+}
+
+.theme-dark form {
+  box-shadow: 0px 0px 15px 2px #555;
+  background-color: #000;
+}
+
+.theme-dark button {
+  background-color: #005a7c; /* Darker blue */
+  color: white;
+}
+
+.theme-dark button:hover {
+  background-color: #004461; /* Even darker blue */
+}
+
+.theme-dark .theme-selector-container, .theme-dark .theme-selector-container select, .theme-dark .theme-selector-container option, .theme-dark #bill, .theme-dark #tip, .theme-dark #result, .theme-dark .label-text, .theme-dark .select-currency {
+  background-color: #000;
+  color: #fff;
+}
